@@ -45,10 +45,10 @@ clear.addEventListener("click", function(){
 
 // Show todays date 
 
-const options = {weekday : "long", month:"short", day:"numeric"};
+const options = {  month:"long", weekday : "short", day:"numeric"};
 const today = new Date();
 
-dateElement.innerHTML = today.toLocaleDateString("en-US", options);
+dateElement.innerHTML = today.toLocaleDateString("en-UA", options);
 
 //  add to do function 
 
@@ -75,10 +75,26 @@ function addToDo(toDo, id, done, trash){
     list.insertAdjacentHTML(position, item);    
 }
 
-// addToDo("drink Coffe");
+// add an item to the list user the plus button
+   document.getElementById("plus").onclick = function(){
+    const toDo = input.value;
 
+    if(toDo){
+        addToDo(toDo, id, false, false);
+        LIST.push({
+            name : toDo,
+            id:id,
+            done : false,
+            trush : false
+          });
+
+        localStorage.setItem("TODO", JSON.stringify(LIST));
+            id++;
+  
+    input.value = "";
+}
+};
 // add an item to the list user the enter key
-
 document.addEventListener("keyup", function(event){
     if(event.keyCode == 13){
         const toDo = input.value;
@@ -102,6 +118,7 @@ localStorage.setItem("TODO", JSON.stringify(LIST));
         }
         input.value = "";
     }
+
 });
 
 //addToDo("coffe", 1, true, false);
