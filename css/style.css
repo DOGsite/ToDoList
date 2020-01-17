@@ -162,7 +162,7 @@ body{
 
 
 @media screen and (max-width: 720px){
-   /* ------------ youtube.com/CodeExplained ------------ */
+
 body{
     padding: 0;
     margin: 0;
@@ -178,14 +178,14 @@ body{
     /* display: flex; */
     /* align-items: center; */
     /* justify-content: center; */
-    padding:10px;
+    padding:20px;
     width:380px;
     margin:0 auto;
 }
 
 /* ------------ header ------------ */
 .header{
-    width: 330px;
+    width: 350px;
     height:200px;
     background-image: url('../img/bg2.jpg');
     background-size: 100% 200%;
@@ -220,7 +220,7 @@ body{
 
 /* ------------ content ------------ */
 .content{
-    width:330px;
+    width:350px;
     height: 350px;
     max-height:350px;
     background-color: #FFF;
@@ -283,7 +283,7 @@ body{
 /* ------------ add item ------------ */
 .add-to-do{
     position: relative;
-    width: 310px;
+    width: 330px;
     height:40px;
     background-color: #FFF;
     padding: 10px;
