@@ -250,11 +250,11 @@ height: 100%;
 /* ------------ content ------------ */
 .content{
     width:395px;
-    height: 300px;
-    max-height:300px;
+    height: 350px;
+    max-height:350px;
     background-color: #FFF;
     overflow: auto;
-    background-color: yellow;
+    background-color: red;
 }
 .content::-webkit-scrollbar { 
     display: none; 
