@@ -1,4 +1,7 @@
 /* ------------ youtube.com/CodeExplained ------------ */
+*{
+    transition: all 0.2s;
+}
 body{
     padding: 0;
     margin: 0;
@@ -20,7 +23,7 @@ body{
     background-image: url('../img/bg2.jpg');
     background-size: 100% 200%;
     background-repeat: no-repeat;
-    border-radius: 15px 15px 0 0;
+    /* border-radius: 15px 15px 0 0; */
     position: relative;
 }
 .clear{
@@ -82,11 +85,24 @@ body{
 }
 .item i.co:hover{
     cursor: pointer;
+    color: #6EB200;
+    font-size: 27px;
+
 }
 .fa-check-circle{
     color:#6eb200;
 }
 .item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left:50px;
+    top:5px;
+    background-color: #FFF;
+    max-width:285px;
+}
+.item p.text:hover{
     position: absolute;
     padding:0;
     margin:0;
@@ -109,6 +125,8 @@ body{
 .item i.de:hover{
     color:#af0000;
     cursor: pointer;
+    font-size: 27px;
+
 }
 /* ------------ add item ------------ */
 .add-to-do{
@@ -157,9 +175,15 @@ body{
 }
 
 
+#plus:hover{
+    color:#0026CE;
 
+}
 
-
+.item:hover{
+    /* color: #5D5D5D; */
+    font-size: 30px;
+}
 
 @media screen and (max-width: 720px){
 
@@ -189,10 +213,10 @@ body{
 .header{
     width: 395px;
     height:200px;
-    background-image: url('../img/bg2.jpg');
+    background-image: url('../img/bg4.jpg');
     background-size: 100% 200%;
     background-repeat: no-repeat;
-    border-radius: 15px 15px 0 0;
+    /* border-radius: 15px 15px 0 0; */
     position: relative;
 }
 .clear{
@@ -224,7 +248,7 @@ body{
 .content{
     width:395px;
     height: 1000px;
-    max-height:350px;
+    max-height:1200px;
     background-color: #FFF;
     overflow: auto;
 }
