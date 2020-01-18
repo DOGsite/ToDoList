@@ -248,7 +248,7 @@ body{
 .content{
     width:395px;
     height: 500px;
-    max-height:600px;
+    max-height:500px;
     background-color: #FFF;
     overflow: auto;
 }
