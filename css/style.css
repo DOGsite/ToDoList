@@ -12,6 +12,8 @@ body{
 
 /* ------------ container ------------ */
 .container{
+    overflow: hidden;
+
     padding:10px;
     /* width:380px; */
     width: 100%;
@@ -274,6 +276,7 @@ body,html{
     /* height:440px; */
     /* max-height:35%; */
     background-color: #FFF;
+    color: green;
     
 }
 .content::-webkit-scrollbar { 
