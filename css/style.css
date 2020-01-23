@@ -108,6 +108,7 @@ max-height: 100%;
     color:#6eb200;
 }
 .item p.text{
+    word-wrap: break-word;
     overflow: hidden;
     position: absolute;
     padding:0;
